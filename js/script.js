@@ -200,6 +200,15 @@ createApp({
                 }
                 this.contacts[this.activeChat].messages.push(newMessage)
             }
+
+            setTimeout(() => {
+                const newReply = {
+                    date: new Date().toLocaleString(),
+                    message: "Ok!",
+                    status: "received",
+                }
+                this.contacts[this.activeChat].messages.push(newReply)
+            }, 1000);
             this.newMessage =  {
                 date: "",
                 message: "",
@@ -209,4 +218,4 @@ createApp({
     },
 }).mount('#app')
 
-console.log(new Date().toLocaleString())
+// console.log(new Date().toLocaleString())
