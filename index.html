@@ -78,9 +78,9 @@
                 <section class="chatbox">
                     <header class="chatbox_header flex">
                         <div class="interlocutor-profile flex">
-                            <img :src="myProfile.avatar + '.jpg'" alt="interlocutor profile picture" id="interlocutor-profile-pic">
+                            <img :src="contacts[activeChat].avatar + '.jpg'" alt="interlocutor profile picture" id="interlocutor-profile-pic">
                             <span class="interlocutor-name">
-                                {{myProfile.name}}
+                                {{contacts[activeChat].name}}
                             </span>
                         </div>
                         <nav class="chatbox_header-navbar flex">
