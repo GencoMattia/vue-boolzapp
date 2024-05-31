@@ -3,3 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* General */
+
+body {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
