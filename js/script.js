@@ -178,5 +178,11 @@ createApp({
 
             activeChat: 0,
         }
-    }
+    },
+
+    methods: {
+        getMessages() {
+            return this.contacts[this.activeChat].messages;
+        }
+    },
 }).mount('#app')
