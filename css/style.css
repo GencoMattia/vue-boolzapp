@@ -178,3 +178,13 @@ width: 70px;
     justify-content: space-evenly;
     align-items: center;
 }
+
+
+/* chatbox_messages-display styling */
+
+.chatbox_messages-display {
+    padding: 2rem 4rem;
+    height: calc(100% - 75px);
+    overflow: auto;
+    background-image: url(../img/mine.jpg);
+}
