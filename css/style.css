@@ -60,11 +60,11 @@ main {
 
 .contacts_header {
     padding: .5rem;
+    height: 75px;
 }
 
 .my-profile {
     width: 80%;
-    height: 50px;
     align-items: center;
 }
 
@@ -79,6 +79,15 @@ main {
     justify-content: space-evenly;
     align-items: center;
 }
+
+
+/* contacts_notification-bar styling */
+
+.contacts_notification-bar{
+    background-color: #8edafc;
+    height: 70px;
+}
+
 
 .contacts_header-navbar div {
     width: calc(100% / 3);
