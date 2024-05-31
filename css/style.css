@@ -104,6 +104,21 @@ main {
 }
 
 
+/* contacts_searchbar styling */
+.contacts_searchbar {
+    height: 40px;
+    background-color: white;
+}
+
+.contacts_searchbar-text {
+    width: 80%;
+}
+
+#search-chat {
+    width: 100%;
+}
+
+
 /* chatbox styling */
 
 .chatbox {
