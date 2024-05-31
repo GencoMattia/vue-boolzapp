@@ -86,12 +86,16 @@ main {
 .contacts_notification-bar{
     background-color: #8edafc;
     height: 70px;
-    padding: 1rem;
+    align-items: center;
+    padding: 0 1rem;
 }
 
 .notification-bar_bell-icon {
     background-color: white;
     border-radius: 50%;
+    margin-right: 10px;
+    height: 45px;
+    width: 45px;
 }
 
 .contacts_header-navbar div {
