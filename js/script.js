@@ -165,7 +165,16 @@ createApp({
                         }
                     ],
                 }
-            ]            
+            ],
+            
+            myProfile: {
+                name: 'Mattia',
+                avatar: './img/mine.png',
+                visible: true,
+                messages: [
+                    
+                ], 
+            }
         }
     }
 }).mount('#app')
