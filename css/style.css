@@ -122,7 +122,10 @@ main {
 /* contacts_contacts-list styling */
 
 .contacts_contacts-list {
+    height: calc(100% - 185px);
     overflow: auto;
+    background-color: white;
+    padding: 1rem;
 }
 
 .contact {
@@ -140,7 +143,6 @@ width: 70px;
 
 .contacts_contacts-list article {
     height: 80px;
-    background-color: white;
 }
 
 
