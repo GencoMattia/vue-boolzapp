@@ -60,8 +60,18 @@
                         </div>
                     </div>
                     <div class="contacts_contacts-list">
-                        <article class="contact">
+                        <article v-for="(contact, index) in contacts" class="contact flex">
+                            <div class="contact-pic">
+                                <img :src="contact.avatar + '.jpg'" alt="contact avatar">
+                            </div>
+                            <div class="contact-info">
+                                <p class="contact-name">
+                                    {{ contact.name }}
+                                </p>
+                                <contact class="last-message">
 
+                                </contact>
+                            </div>
                         </article>
                     </div>
                 </section>

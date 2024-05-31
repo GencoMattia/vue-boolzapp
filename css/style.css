@@ -119,6 +119,31 @@ main {
 }
 
 
+/* contacts_contacts-list styling */
+
+.contacts_contacts-list {
+    overflow: auto;
+}
+
+.contact {
+    align-items: center;
+}
+
+.contact-pic {
+width: 70px;
+}
+
+.contact-pic img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.contacts_contacts-list article {
+    height: 80px;
+    background-color: white;
+}
+
+
 /* chatbox styling */
 
 .chatbox {
