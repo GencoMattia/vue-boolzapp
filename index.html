@@ -60,7 +60,7 @@
                         </div>
                     </div>
                     <div class="contacts_contacts-list">
-                        <article v-for="(contact, index) in contacts" class="contact flex">
+                        <article v-for="(contact, index) in contacts" @click="activeChat = index" class="contact flex">
                             <div class="contact-pic">
                                 <img :src="contact.avatar + '.jpg'" alt="contact avatar">
                             </div>
