@@ -18,9 +18,14 @@ body {
 .app-container {
     height: 100vh;
     background-color: #d8dbd6;
+    position: relative;
 }
 
 #background-green-stripe {
     background-color: #009688;
     height: 10rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
 }
