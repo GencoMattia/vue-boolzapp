@@ -184,7 +184,7 @@ width: 70px;
 
 .chatbox_messages-display {
     padding: 2rem 4rem;
-    height: calc(100% - 75px);
+    height: calc(100% - 150px);
     overflow: auto;
     background-image: url(../img/mine.jpg);
 }
@@ -208,4 +208,29 @@ div.received{
 div.sent {
     align-self: flex-end;
     background-color: #d5f9ba;
+}
+
+
+/* chatbox_input-message-bar styling */
+
+.chatbox_input-message-bar {
+    background-color: #f3eeea;
+    height: 75px;
+    padding: .3rem 1rem;
+}
+
+.input-message_emoji {
+    width: 50px;
+}
+
+.input-message-text {
+    width: calc(100% - 100px);
+}
+
+.input-message-voice {
+    width: 50px;
+}
+
+#input-message-box {
+    width: 100%;
 }
