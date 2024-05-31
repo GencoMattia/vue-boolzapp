@@ -69,7 +69,7 @@ main {
 }
 
 .my-profile img {
-    height: 100%;
+    width: 60px;
     border-radius: 50%;
     margin-right: 10px;
 }
@@ -150,5 +150,31 @@ width: 70px;
 
 .chatbox {
     width: 65%;
+    border-left: 1px solid #e0e0e0
+}
 
+
+/* chatbox_header styling */
+
+.chatbox_header {
+    padding: .5rem;
+    height: 75px;
+    background-color: #eaeaea;
+}
+
+.interlocutor-profile {
+    width: 85%;
+    align-items: center;
+}
+
+.interlocutor-profile img {
+    width: 60px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.chatbox_header-navbar {
+    width: 15%;
+    justify-content: space-evenly;
+    align-items: center;
 }
