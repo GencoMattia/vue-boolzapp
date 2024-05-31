@@ -174,7 +174,9 @@ createApp({
                 messages: [
                     
                 ], 
-            }
+            },
+
+            activeChat: 0,
         }
     }
 }).mount('#app')
