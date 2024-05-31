@@ -42,9 +42,8 @@
                         </nav>
                     </header>
                     <div class="contacts_notification-bar flex">
-                        <div class="notification-bar_bell-icon flex centered">
-                            <i class="fa-solid fa-bell" id="notification-active-bell"></i>
-                            <i class="fa-solid fa-bell-slash" id="notification-blocked-bell"></i>
+                        <div @click="toggleNotifications" class="notification-bar_bell-icon flex centered">
+                            <i :class="isNotificationsOn === true ? 'fa-solid fa-bell' : 'fa-solid fa-bell-slash'"  id="notification-bell"></i></i>
                         </div>
                         <div class="notification-bar_text">
                             <p>Ricevi notifiche di nuovi messaggi</p>
@@ -68,9 +67,9 @@
                                 <p class="contact-name">
                                     {{ contact.name }}
                                 </p>
-                                <contact class="last-message">
+                                <div class="last-message">
 
-                                </contact>
+                                </div>
                             </div>
                         </article>
                     </div>

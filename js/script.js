@@ -183,6 +183,8 @@ createApp({
                 message: "",
                 status: "sent",
             },
+
+            isNotificationsOn: true,
         }
     },
 
@@ -214,6 +216,10 @@ createApp({
                 message: "",
                 status: "sent",
             }
+        },
+
+        toggleNotifications() {
+            this.isNotificationsOn = !this.isNotificationsOn;
         }
     },
 }).mount('#app')
