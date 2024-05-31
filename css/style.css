@@ -188,3 +188,24 @@ width: 70px;
     overflow: auto;
     background-image: url(../img/mine.jpg);
 }
+
+.chatbox_messages-board {
+    flex-direction: column;
+}
+
+.chatbox_messages-board div {
+    align-self: flex-start;
+    width: 40%;
+    padding: 1rem;
+    border-radius: .7rem;
+    margin-bottom: .5rem;
+}
+
+div.received{
+    background-color: #ffffff;
+}
+
+div.sent {
+    align-self: flex-end;
+    background-color: #d5f9ba;
+}

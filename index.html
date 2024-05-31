@@ -96,7 +96,7 @@
                         </nav>
                     </header>
                     <div class="chatbox_messages-display">
-                        <div class="chatbox_messages-board">
+                        <div class="chatbox_messages-board flex">
                             <div v-for="(messages, index) in getMessages()" class="message" :class="messages.status">
                                 <p >
                                     {{ messages.message }}
