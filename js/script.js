@@ -193,11 +193,17 @@ createApp({
 
         pushNewMessage() {
             if(this.newMessage.message.trim() !== "") {
-                const thisActiveChat = {
+                const newMessage = {
                     date: "",
                     message: this.newMessage.message,
                     status: "sent",
                 }
+                this.contacts[this.activeChat].messages.push(newMessage)
+            }
+            this.newMessage =  {
+                date: "",
+                message: "",
+                status: "sent",
             }
         }
     },
