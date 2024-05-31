@@ -11,3 +11,16 @@ body {
     font-weight: 400;
     font-style: normal;
 }
+
+
+/* app-container styling */
+
+.app-container {
+    height: 100vh;
+    background-color: #d8dbd6;
+}
+
+#background-green-stripe {
+    background-color: #009688;
+    height: 10rem;
+}
