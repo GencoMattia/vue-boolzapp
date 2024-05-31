@@ -194,7 +194,7 @@ createApp({
         pushNewMessage() {
             if(this.newMessage.message.trim() !== "") {
                 const newMessage = {
-                    date: "",
+                    date: new Date().toLocaleString(),
                     message: this.newMessage.message,
                     status: "sent",
                 }
@@ -208,3 +208,5 @@ createApp({
         }
     },
 }).mount('#app')
+
+console.log(new Date().toLocaleString())
