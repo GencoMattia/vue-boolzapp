@@ -12,10 +12,9 @@ body {
     font-style: normal;
 }
 
+/* main styling */
 
-/* app-container styling */
-
-.app-container {
+main {
     height: 100vh;
     background-color: #d8dbd6;
     position: relative;
@@ -29,3 +28,16 @@ body {
     right: 0;
     left: 0;
 }
+
+
+/* app-container styling */
+
+.app-container {
+    
+}
+
+
+
+
+/* chatbox styling */
+
