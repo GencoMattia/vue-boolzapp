@@ -92,6 +92,8 @@ main {
 
 .notification-bar_bell-icon {
     background-color: white;
+    color: #8edafc;
+    font-size: 1.4rem;
     border-radius: 50%;
     margin-right: 10px;
     height: 45px;
@@ -101,6 +103,11 @@ main {
 .contacts_header-navbar div {
     width: calc(100% / 3);
     text-align: center;
+}
+
+.notification-bar_text a{
+    color: #6080ac;
+    font-size: .7rem;
 }
 
 
@@ -130,6 +137,11 @@ main {
 
 .contact {
     align-items: center;
+    transition: all .3s;
+}
+
+.contact:hover {
+    background-color: #e9ebeb;
 }
 
 .contact-pic {
