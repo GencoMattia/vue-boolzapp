@@ -177,12 +177,28 @@ createApp({
             },
 
             activeChat: 0,
+
+            newMessage: {
+                date: "",
+                message: "",
+                status: "sent",
+            },
         }
     },
 
     methods: {
         getMessages() {
             return this.contacts[this.activeChat].messages;
+        },
+
+        pushNewMessage() {
+            if(this.newMessage.message.trim() !== "") {
+                const thisActiveChat = {
+                    date: "",
+                    message: this.newMessage.message,
+                    status: "sent",
+                }
+            }
         }
     },
 }).mount('#app')
