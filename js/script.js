@@ -165,11 +165,11 @@ createApp({
                         }
                     ],
                 }
-            ]            
+            ],            
             
             myProfile: {
                 name: 'Mattia',
-                avatar: './img/mine',
+                avatar: './img/avatar_io',
                 visible: true,
                 messages: [
                     

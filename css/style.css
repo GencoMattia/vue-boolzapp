@@ -49,7 +49,35 @@ main {
 }
 
 
+/* section-contacts styling */
+
+.contacts {
+    width: 35%;
+    background-color: #eaeaea;
+}
+
+/* contacts_header styling */
+
+.contacts_header {
+    padding: .5rem;
+}
+
+.my-profile {
+    width: 80%;
+    height: 50px;
+    align-items: center;
+}
+
+.my-profile img {
+    height: 100%;
+    border-radius: 50%;
+    margin-right: 10px;
+}
 
 
 /* chatbox styling */
 
+.chatbox {
+    width: 65%;
+
+}

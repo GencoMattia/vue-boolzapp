@@ -17,10 +17,26 @@
     <div id="app">
         <main class="flex centered">
             <div id="background-green-stripe"></div>
-            <div class="app-container">
+            <div class="app-container flex">
                 <section class="contacts">
                     <header class="contacts_header">
+                        <div class="my-profile flex">
+                            <img :src="myProfile.avatar + '.jpg'" alt="my profile picture" id="my-profile-pic">
+                            <span class="my-name">
+                                {{myProfile.name}}
+                            </span>
+                        </div>
+                        <nav class="contacts_header-navbar">
+                            <div class="contacts_refresh-button">
+                                
+                            </div>
+                            <div class="contacts_new-chat-button">
 
+                            </div>
+                            <div class="contacts_settings-button">
+
+                            </div>
+                        </nav>
                     </header>
                     <div class="contacts_notification-bar">
 
