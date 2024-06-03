@@ -64,12 +64,17 @@
                                 <img :src="contact.avatar + '.jpg'" alt="contact avatar">
                             </div>
                             <div class="contact-info">
-                                <p class="contact-name">
-                                    {{ contact.name }}
-                                </p>
-                                <div class="last-message">
-                                    {{ getLastMessage(index).message }}
+                                <div class="contact-name-and-time flex">
+                                    <p class="contact-name">
+                                        {{ contact.name }}
+                                    </p>
+                                    <p class="last-msg-time">
+                                        {{ getTimeFormat(getLastMessage(index).date) }}
+                                    </p>
                                 </div>
+                                <p class="last-message">
+                                    {{ getLastMessage(index).message }}
+                                </p>
                             </div>
                         </article>
                     </div>

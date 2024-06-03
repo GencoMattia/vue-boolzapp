@@ -136,25 +136,46 @@ main {
 }
 
 .contact {
-    align-items: center;
     transition: all .3s;
+    height: 80px;
+    width: 100%;
+}
+
+.contact-info {
+    width: 100%;
 }
 
 .contact:hover {
     background-color: #e9ebeb;
 }
 
+div.contact-name-and-time {
+    padding-top: .3rem;
+    width: 100%;
+}
+
 .contact-pic {
 width: 70px;
+}
+
+p.contact-name {
+    margin-bottom: .3rem;
+}
+
+p.last-message {
+    color: #9e999e;
+    font-size: .7rem;
+}
+
+p.last-msg-time {
+    color: #9e999e;
+    font-size: .7rem;
+    margin-left: auto;
 }
 
 .contact-pic img {
     width: 100%;
     border-radius: 50%;
-}
-
-.contacts_contacts-list article {
-    height: 80px;
 }
 
 
