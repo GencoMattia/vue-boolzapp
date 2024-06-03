@@ -55,7 +55,7 @@
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div class="contacts_searchbar-text">
-                            <input v-model="searchInput" type="text" name="contacts_searchbar" id="search-chat" placeholder="Cerca o inizia una nuova chat">
+                            <input v-model="searchInput" type="text" style="height:20px"name="contacts_searchbar" id="search-chat" placeholder="Cerca o inizia una nuova chat">
                         </div>
                     </div>
                     <div class="contacts_contacts-list">
@@ -116,7 +116,7 @@
                             <i class="fa-regular fa-face-smile"></i>
                         </div>
                         <div class="input-message-text">
-                            <input @keyup.enter="pushNewMessage()" v-model="newMessage.message" type="text" name="input message box" id="input-message-box" placeholder="Scrivi un messaggio">
+                            <input @keyup.enter="pushNewMessage()" v-model="newMessage.message" type="text" style="height: 30px;" name="input message box" id="input-message-box" placeholder="Scrivi un messaggio">
                         </div>
                         <div class="input-message-voice flex centered">
                             <i class="fa-solid fa-microphone"></i>

@@ -140,6 +140,7 @@ main {
     padding-left: .5rem;
     font-size: .7rem;
     color: #525252;
+    border-radius: .5rem;
 }
 
 .contacts_searchbar-icon i {
@@ -307,4 +308,6 @@ p.message-date {
 
 #input-message-box {
     width: 100%;
+    border-radius: .5rem;
+    padding-left: .5rem;
 }
