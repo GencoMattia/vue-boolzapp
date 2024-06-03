@@ -158,6 +158,7 @@ main {
 }
 
 .contact {
+    align-items: center;
     transition: all .3s;
     height: 80px;
     width: 100%;
@@ -165,6 +166,8 @@ main {
 
 .contact-info {
     width: 100%;
+    align-self: flex-start;
+    padding: .3rem 0 0 1rem;
 }
 
 .contact:hover {
