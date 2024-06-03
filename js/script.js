@@ -216,6 +216,7 @@ createApp({
                     status: "received",
                 }
                 this.contacts[this.activeChat].messages.push(newReply)
+                console.log(`newReply.date ${newReply.date}`);
             }, 1000);
             this.newMessage =  {
                 date: "",
@@ -234,11 +235,22 @@ createApp({
         },
 
         getTimeFormat(dateString) {
-            const dateObj = new Date(dateString);
+            console.log(`dateString: ${dateString}`);
+            const [date, splitHours] = dateString.split(" ");
+            const [month, day, year] = date.split("/");
+            const formattedDateString = `${day}/${month}/${year} ${splitHours}`;
+            const dateObj = new Date(formattedDateString);
+            console.log(`formattedDateString: ${formattedDateString}`);
             const hours = dateObj.getHours().toString().padStart(2, "0");
             const minutes = dateObj.getMinutes().toString().padStart(2, "0");
             return `${hours}:${minutes}`;
-        }
+        },
+
+        getFormattedDate() {
+            const currentDate = new Date();
+            const formattedDate = currentDate.toLocaleString();
+            return formattedDate
+        },
     },
 }).mount('#app')
 
