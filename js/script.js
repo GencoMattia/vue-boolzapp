@@ -227,6 +227,13 @@ createApp({
         isContactSearched(contact) {
             const searchedTerm = this.searchInput.toLowerCase();
             return contact.name.toLowerCase().includes(searchedTerm);
+        },
+
+        getTimeFormat(dateString) {
+            const dateObj = new Date(dateString);
+            const hours = dateObj.getHours().toString().padStart(2, "0");
+            const minutes = dateObj.getMinutes().toString().padStart(2, "0");
+            return `${hours}:${minutes}`;
         }
     },
 }).mount('#app')
