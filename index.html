@@ -55,11 +55,11 @@
                             <i class="fa-solid fa-magnifying-glass"></i>
                         </div>
                         <div class="contacts_searchbar-text">
-                            <input type="text" name="contacts_searchbar" id="search-chat" placeholder="Cerca o inizia una nuova chat">
+                            <input v-model="searchInput" type="text" name="contacts_searchbar" id="search-chat" placeholder="Cerca o inizia una nuova chat">
                         </div>
                     </div>
                     <div class="contacts_contacts-list">
-                        <article v-for="(contact, index) in contacts" @click="activeChat = index" class="contact flex">
+                        <article v-for="(contact, index) in contacts" v-show="isContactSearched(contact)" @click="activeChat = index" class="contact flex">
                             <div class="contact-pic">
                                 <img :src="contact.avatar + '.jpg'" alt="contact avatar">
                             </div>

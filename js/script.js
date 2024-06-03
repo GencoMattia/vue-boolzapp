@@ -185,6 +185,8 @@ createApp({
             },
 
             isNotificationsOn: true,
+
+            searchInput: "",
         }
     },
 
@@ -220,6 +222,11 @@ createApp({
 
         toggleNotifications() {
             this.isNotificationsOn = !this.isNotificationsOn;
+        },
+
+        isContactSearched(contact) {
+            const searchedTerm = this.searchInput.toLowerCase();
+            return contact.name.toLowerCase().includes(searchedTerm);
         }
     },
 }).mount('#app')
