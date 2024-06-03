@@ -80,6 +80,9 @@ main {
     align-items: center;
 }
 
+.contacts_header-navbar i {
+    color: #b1b1b1;
+}
 
 /* contacts_notification-bar styling */
 
@@ -123,6 +126,10 @@ main {
 
 #search-chat {
     width: 100%;
+}
+
+.contacts_searchbar-icon i {
+    color: #b1b1b1;
 }
 
 
@@ -212,6 +219,10 @@ p.last-msg-time {
     align-items: center;
 }
 
+.chatbox_header-navbar i {
+    color: #b1b1b1;
+}
+
 
 /* chatbox_messages-display styling */
 
@@ -262,6 +273,10 @@ p.message-date {
     background-color: #f3eeea;
     height: 75px;
     padding: .3rem 1rem;
+}
+
+.chatbox_input-message-bar i{
+    color:#6b7376;
 }
 
 .input-message_emoji {
