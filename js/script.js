@@ -195,6 +195,10 @@ createApp({
             return this.contacts[this.activeChat].messages;
         },
 
+        getLastMessage(index) {
+            return this.contacts[index].messages[this.contacts[index].messages.length - 1];
+        },
+
         pushNewMessage() {
             if(this.newMessage.message.trim() !== "") {
                 const newMessage = {
