@@ -245,12 +245,6 @@ createApp({
             const minutes = dateObj.getMinutes().toString().padStart(2, "0");
             return `${hours}:${minutes}`;
         },
-
-        getFormattedDate() {
-            const currentDate = new Date();
-            const formattedDate = currentDate.toLocaleString();
-            return formattedDate
-        },
     },
 }).mount('#app')
 
