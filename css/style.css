@@ -207,8 +207,9 @@ width: 70px;
 
 .chatbox_messages-board div {
     align-self: flex-start;
+    flex-direction: column;
     width: 40%;
-    padding: 1rem;
+    padding: 1rem .3rem .3rem 1rem;
     border-radius: .7rem;
     margin-bottom: .5rem;
 }
@@ -220,6 +221,17 @@ div.received{
 div.sent {
     align-self: flex-end;
     background-color: #d5f9ba;
+}
+
+p.message-text {
+    font-size: .95rem;
+    margin-bottom: .5rem;
+}
+
+p.message-date {
+    color: #b8b1b8;
+    font-size: .7rem;
+    align-self: flex-end;
 }
 
 

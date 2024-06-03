@@ -96,9 +96,12 @@
                     </header>
                     <div class="chatbox_messages-display">
                         <div class="chatbox_messages-board flex">
-                            <div v-for="(messages, index) in getMessages()" class="message" :class="messages.status">
-                                <p >
+                            <div v-for="(messages, index) in getMessages()" class="message flex" :class="messages.status">
+                                <p class="message-text">
                                     {{ messages.message }}
+                                </p>
+                                <p class="message-date">
+                                    {{ messages.date }}
                                 </p>
                             </div>
                         </div>
