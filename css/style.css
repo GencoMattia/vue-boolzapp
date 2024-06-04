@@ -154,7 +154,7 @@ main {
     height: calc(100% - 185px);
     overflow: auto;
     background-color: white;
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
 .contact {
@@ -162,6 +162,7 @@ main {
     transition: all .3s;
     height: 80px;
     width: 100%;
+    padding: 0 1rem;
 }
 
 .contact-info {
@@ -171,6 +172,10 @@ main {
 }
 
 .contact:hover {
+    background-color: #e9ebeb;
+}
+
+.contact.active-chat {
     background-color: #e9ebeb;
 }
 
