@@ -252,6 +252,13 @@ createApp({
             const minutes = dateObj.getMinutes().toString().padStart(2, "0");
             return `${hours}:${minutes}`;
         },
+
+        showContextMenu(index, event) {
+            this.contextMenu.visible = true;
+            this.contextMenu.x = event.clientX;
+            this.contextMenu.y = event.clientY;
+            this.contextMenu.messageIndex = index;
+        },
     },
 }).mount('#app')
 
