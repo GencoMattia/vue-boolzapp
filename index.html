@@ -59,7 +59,7 @@
                         </div>
                     </div>
                     <div class="contacts_contacts-list">
-                        <article v-for="(contact, index) in contacts" v-show="isContactSearched(contact)" @click="activeChat = index" class="contact flex" :class="index === activeChat ? 'active-chat' : ''">
+                        <article v-for="(contact, index) in contacts" v-show="isContactSearched(contact)" @click="activeChat = index" class="contact flex" :class="index === activeChat ? 'active-contact' : ''">
                             <div class="contact-pic">
                                 <img :src="contact.avatar + '.jpg'" alt="contact avatar">
                             </div>
