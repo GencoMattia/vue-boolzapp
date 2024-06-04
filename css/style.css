@@ -320,7 +320,7 @@ p.message-date {
 
 .context-menu {
     position: absolute;
-    width: 180px !important;
+    width: 160px !important;
     padding: 0 !important;
     background-color: #e7e7e7;
     border: 1px solid #e6e6e6;
@@ -338,6 +338,7 @@ p.message-date {
     cursor: pointer;
     padding: .5rem;
     border-radius: .7rem;
+    font-size: .8rem;
 }
 
 .context-menu li:hover {
