@@ -263,6 +263,10 @@ createApp({
         deleteMessage(index) {
             this.contacts[this.activeChat].messages.splice(index, 1);
             this.contextMenu.visible = false;
+        },
+
+        closeContextMenu() {
+            this.contextMenu.visible = false;
         }
     },
 }).mount('#app')

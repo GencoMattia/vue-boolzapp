@@ -115,7 +115,12 @@
 
                             <div v-if="contextMenu.visible" class="context-menu" :style="{ top: contextMenu.y + 'px', left: contextMenu.x + 'px' }">
                                 <ul>
-                                    <li @click="deleteMessage(contextMenu.messageIndex)">Elimina messaggio</li>
+                                    <li @click="deleteMessage(contextMenu.messageIndex)">
+                                        Elimina messaggio
+                                    </li>
+                                    <li @click="closeContextMenu">
+                                        Chiudi Menu
+                                    </li>
                                 </ul>
                             </div>
                         </div>
