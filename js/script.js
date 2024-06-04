@@ -187,6 +187,13 @@ createApp({
             isNotificationsOn: true,
 
             searchInput: "",
+
+            contextMenu: {
+                visible: false,
+                x: 0,
+                y: 0,
+                messageIndex: null,
+            }
         }
     },
 

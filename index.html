@@ -101,13 +101,22 @@
                     </header>
                     <div class="chatbox_messages-display">
                         <div class="chatbox_messages-board flex">
-                            <div v-for="(messages, index) in getMessages()" class="message flex" :class="messages.status">
+                            <div v-for="(messages, index) in getMessages()"
+                            class="message flex" 
+                            :class="messages.status"
+                            @contextmenu.prevent="showContextMenu(index, $event)">
                                 <p class="message-text">
                                     {{ messages.message }}
                                 </p>
                                 <p class="message-date">
                                     {{ getTimeFormat(messages.date) }}
                                 </p>
+                            </div>
+
+                            <div v-if="contextMenu.visible" class="context-menu" :style="{ top: contextMenu.y + 'px', left: contextMenu.x + 'px' }">
+                                <ul>
+                                    <li @click="deleteMessage(contextMenu.messageIndex)">Elimina messaggio</li>
+                                </ul>
                             </div>
                         </div>
                     </div>
