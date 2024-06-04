@@ -314,3 +314,32 @@ p.message-date {
     border-radius: .5rem;
     padding-left: .5rem;
 }
+
+
+/* Context Menu stiling */
+
+.context-menu {
+    position: absolute;
+    width: 180px !important;
+    padding: 0 !important;
+    background-color: #e7e7e7;
+    border: 1px solid #e6e6e6;
+    z-index: 3;
+}
+
+.context-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.context-menu li {
+    text-align: center;
+    cursor: pointer;
+    padding: .5rem;
+    border-radius: .7rem;
+}
+
+.context-menu li:hover {
+    background-color: #d1d1d1;
+}

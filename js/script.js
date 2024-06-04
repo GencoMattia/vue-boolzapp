@@ -255,8 +255,8 @@ createApp({
 
         showContextMenu(index, event) {
             this.contextMenu.visible = true;
-            this.contextMenu.x = event.clientX;
-            this.contextMenu.y = event.clientY;
+            this.contextMenu.x = event.clientX - 50;
+            this.contextMenu.y = event.clientY - 50;
             this.contextMenu.messageIndex = index;
         },
 
